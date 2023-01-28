@@ -15,3 +15,18 @@ function createCourse(): {
 } {
   return { name: "reactJs", price: 232 };
 }
+
+type User = {
+  readonly _id: string;
+  name: string;
+  email: string;
+  isActive: boolean;
+  credCard?: number;
+};
+
+let myUser: User = {
+  _id: crypto.randomUUID(),
+  name: "Anmol",
+  email: "anmol@dev.com",
+  isActive: true,
+};
