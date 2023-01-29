@@ -20,3 +20,8 @@ function identityFour(val) {
     return val;
 }
 // identityFour<Bottle>({});
+const getMoreSearchProducts = (products) => {
+    //do dome operation
+    const myIndex = 3;
+    return products[myIndex];
+};

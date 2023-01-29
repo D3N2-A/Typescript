@@ -34,3 +34,13 @@ interface Bottle {
 }
 
 // identityFour<Bottle>({});
+
+
+
+const getMoreSearchProducts = <T,>(products: T[]): T => {
+  //do dome operation
+  const myIndex = 3;
+  return products[myIndex];
+};
+
+
