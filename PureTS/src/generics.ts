@@ -35,12 +35,41 @@ interface Bottle {
 
 // identityFour<Bottle>({});
 
-
-
-const getMoreSearchProducts = <T,>(products: T[]): T => {
+const getMoreSearchProducts = <T>(products: T[]): T => {
   //do dome operation
   const myIndex = 3;
   return products[myIndex];
 };
 
+interface Database {
+  connection: string;
+  username: string;
+  password: string;
+}
+
+function anotherOne<T, U extends Database>(val1: T, val2: U): Object {
+  return {
+    val1,
+    val2,
+  };
+}
+
+// anotherOne(3, "four");
+
+interface Quiz {
+  name: string;
+  type: string;
+}
+interface Course {
+  name: string;
+  author: string;
+  subject: string;
+}
+
+class Sellable<T> {
+  public cart: T[] = [];
+  addToCart(product: T) {
+    this.cart.push(product);
+  }
+}
 
